@@ -112,7 +112,7 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 className="bg-primary-600 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:bg-transparent hover:text-primary-600 dark:hover:text-primary-400 border-2 border-primary-600 hover:shadow-lg"
               >
-                Download Resume
+                View Resume
               </a>
               <a href="#projects" className="btn-outline">
                 View Projects

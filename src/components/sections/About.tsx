@@ -24,7 +24,7 @@ export default function About() {
             <div className="relative">
               <div className="w-full aspect-square max-w-md mx-auto rounded-2xl bg-gradient-to-br from-primary-400 to-blue-500 p-1">
                 <div className="w-full h-full rounded-2xl bg-gray-200 dark:bg-gray-700 flex items-center justify-center overflow-hidden">
-                  <img src="/images/profile.png" alt="Sajid" className="w-full h-full object-cover" />
+                  <img src="/images/about.jpeg" alt="Sajid" className="w-full h-full object-cover" />
                 </div>
               </div>
               {/* Decorative Elements */}
