@@ -64,9 +64,21 @@ Replace placeholder images:
 - Add project screenshots in the public folder
 
 ### Contact Form
-The contact form is ready for integration. Options:
+The contact form is integrated with **[Web3Forms](https://web3forms.com/)** for email delivery.
+
+#### Current Setup (Web3Forms)
+1. The form sends submissions to your email via Web3Forms API
+2. Access key is configured in `src/components/sections/Contact.tsx`
+3. To use your own Web3Forms account:
+   - Sign up at [web3forms.com](https://web3forms.com/)
+   - Get your access key from the dashboard
+   - Replace the `access_key` in `Contact.tsx`
+
+#### Alternative Options
+If you prefer a different service, you can easily switch to:
 - [Formspree](https://formspree.io/)
 - [EmailJS](https://www.emailjs.com/)
+- [Netlify Forms](https://www.netlify.com/products/forms/)
 - Custom API endpoint
 
 ## 🚀 Deployment

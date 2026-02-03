@@ -17,7 +17,7 @@ const educationData = [
     institution: 'New Government Degree College',
     location: 'Rajshahi, Bangladesh',
     period: '2019 - 2021',
-    description: 'Science major with a focus on Mathematics, Physics. Graduated with scholarship for academic excellence.',
+    description: 'Science major with a focus on Mathematics and Physics. Graduated with scholarship for academic excellence.',
     gpa: 'GPA: 5.00/5.00',
   },
   {

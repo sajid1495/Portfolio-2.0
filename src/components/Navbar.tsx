@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { createPortal } from 'react-dom'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X, Sun, Moon } from 'lucide-react'
 import { useTheme } from './ThemeProvider'
@@ -126,44 +127,47 @@ export default function Navbar() {
         )}
       </AnimatePresence>
 
-      {/* Signature Lightbox */}
-      <AnimatePresence>
-        {showSignature && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-black/80 backdrop-blur-sm cursor-pointer"
-            onClick={() => setShowSignature(false)}
-          >
-            <motion.img
-              initial={{ scale: 0.5, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.5, opacity: 0 }}
-              transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-              src="/images/signature.png"
-              alt="Sajid's Signature"
-              className="max-w-[90vw] max-h-[70vh] w-auto h-auto object-contain"
-            />
-            <motion.p
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: 20, opacity: 0 }}
-              transition={{ delay: 0.2 }}
-              className="mt-6 text-white/80 text-lg md:text-xl font-light tracking-wide"
-            >
-              Signature
-            </motion.p>
-            <button
+      {/* Signature Lightbox - rendered via portal to ensure proper fixed positioning */}
+      {typeof window !== 'undefined' && createPortal(
+        <AnimatePresence>
+          {showSignature && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-black/80 backdrop-blur-sm cursor-pointer"
               onClick={() => setShowSignature(false)}
-              className="absolute top-6 right-6 p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
-              aria-label="Close"
             >
-              <X className="w-8 h-8 text-white" />
-            </button>
-          </motion.div>
-        )}
-      </AnimatePresence>
+              <motion.img
+                initial={{ scale: 0.5, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.5, opacity: 0 }}
+                transition={{ type: 'spring', damping: 25, stiffness: 300 }}
+                src="/images/signature.png"
+                alt="Sajid's Signature"
+                className="max-w-[90vw] max-h-[70vh] w-auto h-auto object-contain"
+              />
+              <motion.p
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: 20, opacity: 0 }}
+                transition={{ delay: 0.2 }}
+                className="mt-6 text-white/80 text-lg md:text-xl font-light tracking-wide"
+              >
+                Signature
+              </motion.p>
+              <button
+                onClick={() => setShowSignature(false)}
+                className="absolute top-6 right-6 p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+                aria-label="Close"
+              >
+                <X className="w-8 h-8 text-white" />
+              </button>
+            </motion.div>
+          )}
+        </AnimatePresence>,
+        document.body
+      )}
     </nav>
   )
 }
