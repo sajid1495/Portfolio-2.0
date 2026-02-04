@@ -5,7 +5,7 @@ import AnimatedSection from '../AnimatedSection'
 import { Github, GitFork, Star, Users, BookOpen, ExternalLink, Loader2 } from 'lucide-react'
 
 // Your GitHub username - change this to your actual username
-const GITHUB_USERNAME = 'sajid1495'
+const GITHUB_USERNAME = 'sajidruetcse21'
 
 interface GitHubUser {
   login: string

@@ -123,7 +123,7 @@ export default function Contact() {
                 </p>
                 <div className="flex items-center gap-4">
                   <a
-                    href="https://github.com/sajid1495"
+                    href="https://github.com/sajidruetcse21"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-primary-100 dark:hover:bg-primary-900 text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"

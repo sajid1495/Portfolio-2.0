@@ -10,7 +10,7 @@ const projects = [
     image: '/images/project1.png',
     technologies: ['Python', 'OpenCV', 'SQLite', 'Tkinter'],
     liveUrl: null,
-    githubUrl: 'https://github.com/sajid1495/Real-Time-Attendance-SQLite',
+    githubUrl: 'https://github.com/sajidruetcse21/Real-Time-Attendance-SQLite',
     featured: true,
   },
   {
@@ -19,7 +19,7 @@ const projects = [
     image: '/images/project2.png',
     technologies: ['Python', 'FastAPI', 'Scikit-learn', 'Docker', 'Pydantic'],
     liveUrl: null,
-    githubUrl: 'https://github.com/sajid1495/Insurance-Premium-Predictor',
+    githubUrl: 'https://github.com/sajidruetcse21/Insurance-Premium-Predictor',
     featured: true,
   },
   {
@@ -28,7 +28,7 @@ const projects = [
     image: '/images/project3.png',
     technologies: ['Flutter', 'Dart', 'Hive', 'Android'],
     liveUrl: null,
-    githubUrl: 'https://github.com/sajid1495/Weekly-Routine-Manager',
+    githubUrl: 'https://github.com/sajidruetcse21/Weekly-Routine-Manager',
     featured: true,
   },
   {
@@ -37,7 +37,7 @@ const projects = [
     image: null,
     technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Netlify'],
     liveUrl: null,
-    githubUrl: 'https://github.com/sajid1495/Portfolio-2.0',
+    githubUrl: 'https://github.com/sajidruetcse21/Portfolio-2.0',
     featured: false,
   },
   {
@@ -46,7 +46,7 @@ const projects = [
     image: null,
     technologies: ['C', 'Terminal', 'File I/O'],
     liveUrl: null,
-    githubUrl: 'https://github.com/sajid1495/myCash',
+    githubUrl: 'https://github.com/sajidruetcse21/myCash',
     featured: false,
   },
   {
@@ -55,7 +55,7 @@ const projects = [
     image: null,
     technologies: ['TypeScript', 'Next.js', 'Prisma', 'CSS'],
     liveUrl: null,
-    githubUrl: 'https://github.com/sajid1495/School-Management',
+    githubUrl: 'https://github.com/sajidruetcse21/School-Management',
     featured: false,
   },
 ]

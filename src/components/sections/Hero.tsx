@@ -121,7 +121,7 @@ export default function Hero() {
               className="flex items-center justify-center lg:justify-start gap-4"
             >
               <a
-                href="https://github.com/sajid1495"
+                href="https://github.com/sajidruetcse21"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-primary-100 dark:hover:bg-primary-900 transition-colors"
