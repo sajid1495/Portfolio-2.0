@@ -141,7 +141,7 @@ export default function Contact() {
                     <Linkedin className="w-6 h-6" />
                   </a>
                   <a
-                    href="https://facebook.com/sajid.ruet"
+                    href="https://facebook.com/sajid.ruetcse21"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-3 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-primary-100 dark:hover:bg-primary-900 text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
