@@ -6,6 +6,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import GeometricBackground from '@/components/GeometricBackground'
 import CustomCursor from '@/components/CustomCursor'
+import TouchScrollEffect from '@/components/TouchScrollEffect'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider>
           <CustomCursor />
+          <TouchScrollEffect />
           <GeometricBackground />
           <Navbar />
           <main>{children}</main>

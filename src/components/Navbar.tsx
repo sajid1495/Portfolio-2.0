@@ -116,7 +116,18 @@ export default function Navbar() {
                 <a
                   key={link.name}
                   href={link.href}
-                  onClick={() => setIsOpen(false)}
+                  onClick={(e) => {
+                    e.preventDefault()
+                    setIsOpen(false)
+                    // Wait for menu to close, then scroll to section
+                    setTimeout(() => {
+                      const targetId = link.href.replace('#', '')
+                      const element = document.getElementById(targetId)
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth' })
+                      }
+                    }, 300)
+                  }}
                   className="block py-2 px-4 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
                 >
                   {link.name}
